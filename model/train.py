@@ -18,13 +18,6 @@ class NGramModel:
         """Save the trained model to a file."""
         with open(file_path, "wb") as f:
             pickle.dump(self.model, f)
-    # def save_model(self, model_path):
-    #     """Save the trained model."""
-    #     print("Trained model contents:")
-    #     for context, predictions in self.model.items():
-    #         print(f"{context} -> {predictions}")  # Debugging: print all N-grams
-    #     with open(model_path, "wb") as f:
-    #         pickle.dump(self.model, f)
 
 
 def main():

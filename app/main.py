@@ -3,10 +3,9 @@ from app.routes import router
 
 app = FastAPI()
 
-# Include routes
+# Include the routes for prediction
 app.include_router(router)
 
-# Welcome route
 @app.get("/")
-def welcome():
-    return {"message": "Welcome to the Next Word Prediction"}
+async def root():
+    return {"message": "Welcome to the Next Word Prediction API"}
